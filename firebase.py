@@ -16,6 +16,9 @@ data = {'Age': 21, 'name': "Emily", "she likes ice cream": True}
 # database.child("Users").child("Firstperson").set(data)
 # emily = database.child("Users").child("Firstperson").get()
 
-database.child("Users").child("Firstperson").update({"name": "john"})
+
+# database.child("Users").child("Firstperson").update({"name": "Aruuke"})
+# database.child("Users").child("Firstperson").update({"age": 20})
+database.child("Users").child("Firstperson").remove()
 # print(emily.val())
         
