@@ -1,10 +1,15 @@
 import pyrebase
 config = {
-  apiKey: "AIzaSyBvkyTGDK1H92r7uq3gr7hPJ4LkaUPJB7c",
-  authDomain: "connectingfirebasedbtopy-52e63.firebaseapp.com",
-  projectId: "connectingfirebasedbtopy-52e63",
-  storageBucket: "connectingfirebasedbtopy-52e63.firebasestorage.app",
-  messagingSenderId: "219724928193",
-  appId: "1:219724928193:web:60daffa663adfcd3b23040",
-  measurementId: "G-BZ1E9EHRNJ"
+  "apiKey": "AIzaSyC0gRvOJqMBMPLGpNx-H2AT_3zcvNnyoWI",
+  "authDomain": "connectionfireba.firebaseapp.com",
+  "projectId": "connectionfireba",
+  "databaseURL": "https://connectionfireba-default-rtdb.firebaseio.com/",
+  "storageBucket": "connectionfireba.firebasestorage.app",
+  "messagingSenderId": "319406906810",
+  "appId": "1:319406906810:web:6f683a8f8f0b455c065183",
+  "measurementId": "G-FM8L17DDKL"
 }
+firebase = pyrebase.initialize_app(config)
+database = firebase.database()
+
+date = {'Age': 21, }
