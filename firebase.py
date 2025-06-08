@@ -12,4 +12,10 @@ config = {
 firebase = pyrebase.initialize_app(config)
 database = firebase.database()
 
-date = {'Age': 21, }
+data = {'Age': 21, 'name': "Emily", "she likes ice cream": True}
+# database.child("Users").child("Firstperson").set(data)
+# emily = database.child("Users").child("Firstperson").get()
+
+database.child("Users").child("Firstperson").update({"name": "john"})
+# print(emily.val())
+        
